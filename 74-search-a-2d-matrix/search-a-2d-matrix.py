@@ -6,17 +6,10 @@ class Solution:
         #     for j in range(b):
         #         if matrix[i][j] == target:
         #             return True
-        # return False
-        a = len(matrix[0])
-        b = len(matrix)
-        r = 0
-        for i in range(b):
-            if matrix[i][0] <= target and matrix[i][a-1]>= target:
-                r = i
-                break
-        for i in range(a):
-            if target == matrix[r][i]:
-                return True
+        #     return False
+        for i in matrix:
+            for j in i:
+                if j == target:
+                    return True
         return False
-
-        
+       
