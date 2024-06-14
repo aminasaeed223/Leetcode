@@ -13,6 +13,9 @@ class Solution:
             new.remove(max(new))
             return max(new)
 
+# T.C = O(N)
+# S.C = O(N)
+
 
 
 
