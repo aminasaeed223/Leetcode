@@ -3,14 +3,10 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        # using two pointer approach
-        left = 0 #it will keep track of zeros
-        for right in range(len(nums)):
-            if nums[right] != 0:
-                # swap
-                nums[left], nums[right] = nums[right], nums[left]
-                left+=1
-            
-   
-        
+        l = 0
+        for r in range(len(nums)):
+            if nums[r]:
+                nums[l], nums[r] =  nums[r], nums[l]
+                l+=1
+        return nums
         
